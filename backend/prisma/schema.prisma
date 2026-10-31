@@ -1,0 +1,110 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Department {
+  HEADERS
+  SHEET_METAL
+}
+
+enum TransferStatus {
+  IN_TRANSIT
+  RECEIVED
+  PARTIAL
+  DISCREPANCY
+  CANCELLED
+}
+
+enum TransferEventType {
+  SENT
+  RECEIVED
+  DISCREPANCY_FLAGGED
+  CANCELLED
+}
+
+model Plant {
+  id        String   @id @default(uuid())
+  code      String   @unique
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  transfersSent     Transfer[]      @relation("TransfersSent")
+  transfersReceived Transfer[]      @relation("TransfersReceived")
+  events            TransferEvent[]
+
+  @@map("plants")
+}
+
+model Transfer {
+  id             String         @id @default(uuid())
+  transferNo     String         @unique
+  jobOrderNo     String
+  sfgCode        String
+  sfgDescription String
+  department     Department
+  qtySent        Float
+  uom            String
+  fromPlantId    String
+  toPlantId      String
+  sentBy         String
+  sentAt         DateTime       @default(now())
+  status         TransferStatus @default(IN_TRANSIT)
+  qtyReceived    Float?
+  receivedBy     String?
+  receivedAt     DateTime?
+  remarks        String?
+  externalRef    String?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+
+  fromPlant Plant           @relation("TransfersSent", fields: [fromPlantId], references: [id])
+  toPlant   Plant           @relation("TransfersReceived", fields: [toPlantId], references: [id])
+  events    TransferEvent[]
+
+  @@index([status])
+  @@index([fromPlantId])
+  @@index([toPlantId])
+  @@index([jobOrderNo])
+  @@map("transfers")
+}
+
+model TransferEvent {
+  id         String            @id @default(uuid())
+  transferId String
+  eventType  TransferEventType
+  actor      String
+  plantId    String
+  payload    Json
+  createdAt  DateTime          @default(now())
+
+  transfer Transfer @relation(fields: [transferId], references: [id], onDelete: Cascade)
+  plant    Plant    @relation(fields: [plantId], references: [id])
+
+  @@index([transferId])
+  @@map("transfer_events")
+}
+
+model IdempotencyKey {
+  id           String   @id @default(uuid())
+  key          String   @unique
+  requestHash  String
+  responseBody Json
+  createdAt    DateTime @default(now())
+
+  @@map("idempotency_keys")
+}
+
+model DailyCounter {
+  id      String @id @default(uuid())
+  date    String @unique // Format: YYYYMMDD
+  lastSeq Int    @default(0)
+
+  @@map("daily_counters")
+}

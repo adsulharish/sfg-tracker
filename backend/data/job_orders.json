@@ -1,0 +1,218 @@
+[
+  {
+    "jobOrderNo": "JO-2026-1001",
+    "productCode": "FG-HVAC-X500",
+    "productName": "Commercial HVAC Air Handler Unit X500",
+    "status": "RELEASED",
+    "plannedStart": "2026-10-15T08:00:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-001",
+        "description": "Refrigerant Distribution Header 3-Way",
+        "department": "HEADERS",
+        "requiredQty": 50,
+        "uom": "PCS",
+        "producingPlant": "P1",
+        "consumingPlant": "P3"
+      },
+      {
+        "sfgCode": "SFG-SHT-101",
+        "description": "Outer Galvanized Enclosure Side Panel",
+        "department": "SHEET_METAL",
+        "requiredQty": 50,
+        "uom": "PCS",
+        "producingPlant": "P2",
+        "consumingPlant": "P3"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0002",
+    "productCode": "FG-HVAC-M200",
+    "productName": "Modular Condenser Package M200",
+    "status": "RELEASED",
+    "plannedStart": "2026-10-18T07:30:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-002",
+        "description": "Copper Return Bend Header Assembly",
+        "department": "HEADERS",
+        "requiredQty": 80,
+        "uom": "PCS",
+        "producingPlant": "P1",
+        "consumingPlant": "P2"
+      },
+      {
+        "sfgCode": "SFG-SHT-102",
+        "description": "Condenser Fan Shroud & Mount Bracket",
+        "department": "SHEET_METAL",
+        "requiredQty": 40,
+        "uom": "PCS",
+        "producingPlant": "P2",
+        "consumingPlant": "P1"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0003",
+    "productCode": "FG-COOL-T350",
+    "productName": "Precision Industrial Cooling Tower T350",
+    "status": "IN_PROGRESS",
+    "plannedStart": "2026-10-20T08:00:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-003",
+        "description": "High-Pressure Inlet Header 2-inch",
+        "department": "HEADERS",
+        "requiredQty": 30,
+        "uom": "PCS",
+        "producingPlant": "P1",
+        "consumingPlant": "P2"
+      },
+      {
+        "sfgCode": "SFG-SHT-103",
+        "description": "Stainless Steel Louver Blade Assembly",
+        "department": "SHEET_METAL",
+        "requiredQty": 120,
+        "uom": "PCS",
+        "producingPlant": "P2",
+        "consumingPlant": "P3"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0004",
+    "productCode": "FG-CHILL-R800",
+    "productName": "Rotary Screw Liquid Chiller R800",
+    "status": "RELEASED",
+    "plannedStart": "2026-10-22T06:00:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-004",
+        "description": "Suction Gas Manifold Dual-Circuit",
+        "department": "HEADERS",
+        "requiredQty": 20,
+        "uom": "PCS",
+        "producingPlant": "P1",
+        "consumingPlant": "P3"
+      },
+      {
+        "sfgCode": "SFG-SHT-104",
+        "description": "Acoustic Compressor Sound Enclosure Shield",
+        "department": "SHEET_METAL",
+        "requiredQty": 15,
+        "uom": "SETS",
+        "producingPlant": "P2",
+        "consumingPlant": "P3"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0005",
+    "productCode": "FG-HEAT-EX40",
+    "productName": "Cross-Flow Plate Heat Exchanger EX40",
+    "status": "PLANNED",
+    "plannedStart": "2026-10-25T08:30:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-005",
+        "description": "Four-Pass Brass Header Collector",
+        "department": "HEADERS",
+        "requiredQty": 60,
+        "uom": "PCS",
+        "producingPlant": "P3",
+        "consumingPlant": "P1"
+      },
+      {
+        "sfgCode": "SFG-SHT-105",
+        "description": "Formed Heavy Gauge Support Flange",
+        "department": "SHEET_METAL",
+        "requiredQty": 60,
+        "uom": "PCS",
+        "producingPlant": "P2",
+        "consumingPlant": "P1"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0006",
+    "productCode": "FG-AIR-V120",
+    "productName": "Variable Air Volume Terminal Unit V120",
+    "status": "RELEASED",
+    "plannedStart": "2026-10-27T08:00:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-006",
+        "description": "Reheat Water Coil Header Loop",
+        "department": "HEADERS",
+        "requiredQty": 45,
+        "uom": "PCS",
+        "producingPlant": "P1",
+        "consumingPlant": "P2"
+      },
+      {
+        "sfgCode": "SFG-SHT-106",
+        "description": "Damper Blade & Casing Outer Shell",
+        "department": "SHEET_METAL",
+        "requiredQty": 45,
+        "uom": "PCS",
+        "producingPlant": "P3",
+        "consumingPlant": "P2"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0007",
+    "productCode": "FG-PUMP-SK50",
+    "productName": "Dual Centrifugal Fluid Pump Skid SK50",
+    "status": "IN_PROGRESS",
+    "plannedStart": "2026-10-28T09:00:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-007",
+        "description": "Discharge Manifold Check Valve Header",
+        "department": "HEADERS",
+        "requiredQty": 25,
+        "uom": "PCS",
+        "producingPlant": "P3",
+        "consumingPlant": "P2"
+      },
+      {
+        "sfgCode": "SFG-SHT-107",
+        "description": "Welded Base Frame Mounting Rail System",
+        "department": "SHEET_METAL",
+        "requiredQty": 25,
+        "uom": "SETS",
+        "producingPlant": "P2",
+        "consumingPlant": "P1"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-24-0008",
+    "productCode": "FG-REC-G700",
+    "productName": "Energy Recovery Ventilator Core G700",
+    "status": "RELEASED",
+    "plannedStart": "2026-10-30T07:00:00.000Z",
+    "sfgs": [
+      {
+        "sfgCode": "SFG-HDR-008",
+        "description": "Glycol Run-Around Coil Header Manifold",
+        "department": "HEADERS",
+        "requiredQty": 35,
+        "uom": "PCS",
+        "producingPlant": "P1",
+        "consumingPlant": "P3"
+      },
+      {
+        "sfgCode": "SFG-SHT-108",
+        "description": "Dual Filter Access Door & Frame",
+        "department": "SHEET_METAL",
+        "requiredQty": 70,
+        "uom": "PCS",
+        "producingPlant": "P3",
+        "consumingPlant": "P1"
+      }
+    ]
+  }
+]

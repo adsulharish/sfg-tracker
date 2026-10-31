@@ -1,0 +1,80 @@
+[
+  {
+    "jobOrderNo": "JO-2026-1001",
+    "parentItemCode": "FG-HVAC-X500",
+    "parentDescription": "Commercial HVAC Air Handler Unit X500",
+    "targetPlant": "P3",
+    "plannedQty": 25,
+    "startDate": "2026-10-15T08:00:00.000Z",
+    "targetDate": "2026-11-15T17:00:00.000Z",
+    "status": "RELEASED",
+    "requiredSFGs": [
+      {
+        "sfgCode": "SFG-HDR-001",
+        "description": "Refrigerant Distribution Header 3-Way",
+        "department": "HEADERS",
+        "qtyRequired": 50,
+        "uom": "PCS"
+      },
+      {
+        "sfgCode": "SFG-SHT-101",
+        "description": "Outer Galvanized Enclosure Side Panel",
+        "department": "SHEET_METAL",
+        "qtyRequired": 50,
+        "uom": "PCS"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-2026-1002",
+    "parentItemCode": "FG-HVAC-M200",
+    "parentDescription": "Modular Condenser Package M200",
+    "targetPlant": "P3",
+    "plannedQty": 40,
+    "startDate": "2026-10-20T08:00:00.000Z",
+    "targetDate": "2026-11-20T17:00:00.000Z",
+    "status": "RELEASED",
+    "requiredSFGs": [
+      {
+        "sfgCode": "SFG-HDR-002",
+        "description": "Copper Return Bend Header Assembly",
+        "department": "HEADERS",
+        "qtyRequired": 80,
+        "uom": "PCS"
+      },
+      {
+        "sfgCode": "SFG-SHT-102",
+        "description": "Condenser Fan Shroud & Mount Bracket",
+        "department": "SHEET_METAL",
+        "qtyRequired": 40,
+        "uom": "PCS"
+      }
+    ]
+  },
+  {
+    "jobOrderNo": "JO-2026-1003",
+    "parentItemCode": "FG-COOL-T350",
+    "parentDescription": "Precision Industrial Cooling Tower T350",
+    "targetPlant": "P2",
+    "plannedQty": 15,
+    "startDate": "2026-10-25T08:00:00.000Z",
+    "targetDate": "2026-11-30T17:00:00.000Z",
+    "status": "IN_PROGRESS",
+    "requiredSFGs": [
+      {
+        "sfgCode": "SFG-HDR-003",
+        "description": "High-Pressure Inlet Header 2-inch",
+        "department": "HEADERS",
+        "qtyRequired": 30,
+        "uom": "PCS"
+      },
+      {
+        "sfgCode": "SFG-SHT-103",
+        "description": "Stainless Steel Louver Blade Assembly",
+        "department": "SHEET_METAL",
+        "qtyRequired": 120,
+        "uom": "PCS"
+      }
+    ]
+  }
+]
